@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="py-5 px-3 border-b border-green-700">
+      <nav class="md:flex md:justify-between">
+        <h1 class="font-bold hidden md:block">NaomiIbe</h1>
+        <ul class="flex md:gap-20 gap-10 justify-between">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <section
+          class="w-fit text-center md:text-left mx-auto md:my-20 my-10 leading-10 px-3"
+        >
+          <h2 class="font-bold md:text-6xl text-4xl">
+            Hello, <br />
+            I am <span class="text-green-700">Naomi</span>, <br />
+            <span class="text-green-700">Backend Developer.</span>
+          </h2>
+          <p class="my-8">
+            Currently located in Nigeria. I love intelligent conversations about
+            technical problems and their solutions
+          </p>
+          <button class="border border-green-700 px-8 py-3 w-fit md:mt-10">
+            <a href="#contact"> Let's keep in touch </a>
+          </button>
+        </section>
+      </section>
+      <section id="skills" class="w-11/12 mx-auto mb-10">
+        <h3 class="font-medium text-xl mb-4 text-center">
+          <span class="text-green-700">Skills</span> and Tools
+        </h3>
+        <div class="flex items-center gap-4 flex-wrap justify-center">
+          <div class="border border-green-700 text-center w-40 p-3 rounded-md">
+            <img
+              src="./src/assets/python3.svg"
+              class="w-24 mx-auto"
+              alt="python"
+            />
+          </div>
+          <div
+            class="border border-green-700 relative w-40 py-5 px-4 rounded-md"
+          >
+            <img src="./src/assets/git.svg" class="w-20" alt="git" />
+            <p class="absolute top-12 text-xl right-8">Git</p>
+          </div>
+          <div class="border border-green-700 text-center w-40 pt-2 rounded-md">
+            <img
+              src="./src/assets/django.svg"
+              class="w-20 mx-auto mt-2"
+              alt="django"
+            />
+            <p class="invisible">Django</p>
+          </div>
+          <div class="relative border border-green-700 w-40 p-4 rounded-md">
+            <img src="./src/assets/flask.svg" class="w-20 mt-2" alt="flask" />
+            <p class="absolute top-12 text-xl right-8">Flask</p>
+          </div>
+          <div
+            class="border border-green-700 relative w-40 py-5 px-2 rounded-md"
+          >
+            <img src="./src/assets/node.svg" class="w-20" alt="node" />
+            <p class="absolute top-12 text-xl right-1">NodeJS</p>
+          </div>
+          <div class="border border-green-700 text-center w-40 p-2 rounded-md">
+            <img
+              src="./src/assets/mysql.svg"
+              class="w-20 mx-auto"
+              alt="mysql"
+            />
+            <p class="invisible">MySQL</p>
+          </div>
+          <div class="border border-green-700 text-center w-40 p-2 rounded-md">
+            <img
+              src="./src/assets/wordpress.svg"
+              class="w-20 mx-auto"
+              alt="wordpress"
+            />
+            <p>WordPress</p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="w-11/12 p-3 mx-auto">
+        <h3 class="font-medium text-xl mb-4 text-center">My Projects</h3>
+        <div class="my-4 leading-7">
+          <h3 class="font-semibold leading-7">Hy! Web Conferencing App</h3>
+          <p>ALX Foundations Project</p>
+          <p class="text-sm font-medium w-fit text-green-900 hover:underline">
+            <a href="https://hyapp.pythonanywhere.com"
+              >hyapp.pythonanywhere.com
+            </a>
+          </p>
+        </div>
+        <div class="my-4 leading-7">
+          <h3 class="font-semibold leading-7">Pyshortener</h3>
+          <p>CLI-based URL shortener</p>
+          <p class="text-sm font-medium w-fit text-green-900 hover:underline">
+            <a href="https://github.com/Amarajah/Showcase_API">Github repo </a>
+          </p>
+        </div>
+        <div class="my-4 leading-7">
+          <h3 class="font-semibold leading-7">Showcase API</h3>
+          <p>Ticket booking API</p>
+          <p class="text-sm font-medium w-fit text-green-900 hover:underline">
+            <a href="https://github.com/Amarajah/Showcase_API">Github repo </a>
+          </p>
+        </div>
+        <div class="my-4 leading-7">
+          <h3 class="font-semibold leading-7">File Chunking Site</h3>
+          <p>Zuri final project</p>
+          <p class="text-sm font-medium w-fit text-green-900 hover:underline">
+            <a href="https://iota.pythonanaywhere.com/"
+              >iota.pythonanaywhere.com
+            </a>
+          </p>
+        </div>
+      </section>
+      <section id="contact" class="w-11/12 mx-auto my-10">
+        <h3 id="contact" class="font-medium text-xl mb-4 text-center">
+          Contact Me
+        </h3>
+        <form
+          action="https://formspree.io/f/mqkjeekb"
+          method="post"
+          class="border border-green-700 w-fit md:w-1/2 p-5 rounded-md mx-auto my-5"
+        >
+          <label class="text-sm" for="full-name">Full Name:</label>
+          <input
+            class="border block p-3 my-2 text-sm placeholder:italic text-green-700 outline-green-700 w-full"
+            type="text"
+            name="full-name"
+            id="full-name"
+            placeholder="Full name"
+            maxlength="30"
+            required
+          />
+          <label class="text-sm" for="email">Email:</label>
+          <input
+            class="border block p-3 my-2 text-sm placeholder:italic text-green-700 outline-green-700 w-full"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+          <label class="text-sm" for="comment">Message:</label>
+          <textarea
+            class="border block p-3 my-2 text-sm placeholder:italic text-green-700 outline-green-700 w-full"
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="5"
+            maxlength="500"
+            placeholder="Hello Naomi..."
+            required
+          ></textarea>
+          <div class="w-fit my-3 md:mx-auto">
+            <button
+              class="bg-green-700 text-sm text-white p-3 md:w-40 rounded-md"
+              type="submit"
+            >
+              Get in touch
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="border-t border-green-700 p-5">
+      <div class="w-fit mx-auto flex gap-32">
+        <button
+          class="italic text-green-700 hover:underline underline-green-700"
+        >
+          <a
+            href="https://github.com/Amarajah"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Github</a
+          >
+        </button>
+        <button
+          class="italic text-green-700 hover:underline underline-green-700"
+        >
+          <a
+            href="https://www.linkedin.com/in/ibe-naomi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </button>
+        <button
+          class="italic text-green-700 hover:underline underline-green-700"
+        >
+          <a
+            href="mailto:naomi.ibeh69@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Email</a
+          >
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
